@@ -14,10 +14,6 @@ RUN wget https://github.com/eunomia-bpf/eunomia-bpf/releases/download/v1.0.27/ec
     chmod +x ./ecli && \
     mv ecli /usr/bin
 
-# Set up a nice welcome message explaining where to find stuff
-RUN echo "echo 'BPF compiler can be found in: /usr/local/src/compiler\n'" | tee -a /.bashrc && \
-    echo "BPF programs can be comiled from the compiler dir with: make build-ebpf-program SOURCE_DIR=/src/<my-example>\n" | tee -a /.bashrc
-
 WORKDIR /src
 
 # Setup the entrypoint
