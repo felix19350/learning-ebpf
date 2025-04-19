@@ -1,0 +1,7 @@
+# C object files
+*.o
+
+# Eunomia package.json and skel.json files
+eunomia/*/*.skel.json
+eunomia/*/package.json
+
