@@ -8,7 +8,7 @@ ARG ARCH=x86_64
 FROM ghcr.io/eunomia-bpf/ecc-${ARCH}:latest
 
 # Get eunomia cli + additional dependencies
-RUN apt update && apt install -y fuse3 libncurses5
+RUN apt update && apt install -y fuse3 libncurses5 libbpf-dev
 
 RUN wget https://github.com/eunomia-bpf/eunomia-bpf/releases/download/v1.0.27/ecli -O ecli && \
     chmod +x ./ecli && \
