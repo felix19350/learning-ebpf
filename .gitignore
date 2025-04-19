@@ -5,3 +5,5 @@
 eunomia/*/*.skel.json
 eunomia/*/package.json
 
+# Eunomia cli tool
+eunomia/ecli
